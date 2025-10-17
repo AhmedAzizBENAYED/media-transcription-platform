@@ -25,16 +25,15 @@ public class MediaUploadService {
     private final KafkaProducerService kafkaProducerService;
 
     private static final List<String> ALLOWED_AUDIO_TYPES = Arrays.asList(
-            "audio/mpeg", "audio/wav", "audio/mp3", "audio/mp4", "audio/ogg", "audio/webm",
-            "audio/x-wav", "audio/x-m4a"
+            "audio/mpeg", "audio/wav", "audio/mp3", "audio/mp4", "audio/ogg",
+            "audio/webm", "audio/x-wav", "audio/x-m4a"
     );
 
     private static final List<String> ALLOWED_VIDEO_TYPES = Arrays.asList(
-            "video/mp4", "video/mpeg", "video/quicktime", "video/webm", "video/x-msvideo",
-            "video/x-matroska", "video/avi"
+            "video/mp4", "video/mpeg", "video/quicktime", "video/webm",
+            "video/x-msvideo", "video/x-matroska", "video/avi"
     );
 
-    // Fallback: detect by file extension if content-type is generic
     private static final List<String> ALLOWED_AUDIO_EXTENSIONS = Arrays.asList(
             ".mp3", ".wav", ".m4a", ".ogg", ".webm", ".aac", ".flac"
     );
@@ -53,8 +52,7 @@ public class MediaUploadService {
         validateFile(file);
 
         // Determine media type
-        MediaFile.MediaType mediaType = determineMediaType(file.getContentType());
-
+        MediaFile.MediaType mediaType = determineMediaType(file.getContentType(), file.getOriginalFilename());
         // Upload to MinIO
         String storageUrl = minioStorageService.uploadFile(file);
         log.info("File uploaded to MinIO: {}", storageUrl);
@@ -100,22 +98,69 @@ public class MediaUploadService {
         }
 
         String contentType = file.getContentType();
-        if (contentType == null) {
-            throw new IllegalArgumentException("Content type is null");
+        String filename = file.getOriginalFilename();
+
+        boolean validFile = false;
+
+        // Check by content type
+        if (contentType != null &&
+                (ALLOWED_AUDIO_TYPES.contains(contentType) || ALLOWED_VIDEO_TYPES.contains(contentType))) {
+            validFile = true;
         }
 
-        if (!ALLOWED_AUDIO_TYPES.contains(contentType) && !ALLOWED_VIDEO_TYPES.contains(contentType)) {
-            throw new IllegalArgumentException("Unsupported file type: " + contentType);
+        // Check by extension if content-type is generic
+        if (!validFile && filename != null) {
+            String lowerFilename = filename.toLowerCase();
+            for (String ext : ALLOWED_AUDIO_EXTENSIONS) {
+                if (lowerFilename.endsWith(ext)) {
+                    validFile = true;
+                    break;
+                }
+            }
+            if (!validFile) {
+                for (String ext : ALLOWED_VIDEO_EXTENSIONS) {
+                    if (lowerFilename.endsWith(ext)) {
+                        validFile = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        if (!validFile) {
+            throw new IllegalArgumentException(
+                    String.format("Unsupported file type: %s. Supported: audio (mp3, wav, m4a) and video (mp4, avi, mov)",
+                            contentType)
+            );
         }
     }
 
-    private MediaFile.MediaType determineMediaType(String contentType) {
-        if (ALLOWED_AUDIO_TYPES.contains(contentType)) {
-            return MediaFile.MediaType.AUDIO;
-        } else if (ALLOWED_VIDEO_TYPES.contains(contentType)) {
-            return MediaFile.MediaType.VIDEO;
+    private MediaFile.MediaType determineMediaType(String contentType, String filename) {
+        // Check content type first
+        if (contentType != null) {
+            if (ALLOWED_AUDIO_TYPES.contains(contentType)) {
+                return MediaFile.MediaType.AUDIO;
+            } else if (ALLOWED_VIDEO_TYPES.contains(contentType)) {
+                return MediaFile.MediaType.VIDEO;
+            }
         }
-        throw new IllegalArgumentException("Cannot determine media type for: " + contentType);
+
+        // Fallback to extension
+        if (filename != null) {
+            String lowerFilename = filename.toLowerCase();
+            for (String ext : ALLOWED_AUDIO_EXTENSIONS) {
+                if (lowerFilename.endsWith(ext)) {
+                    return MediaFile.MediaType.AUDIO;
+                }
+            }
+            for (String ext : ALLOWED_VIDEO_EXTENSIONS) {
+                if (lowerFilename.endsWith(ext)) {
+                    return MediaFile.MediaType.VIDEO;
+                }
+            }
+        }
+
+        throw new IllegalArgumentException("Cannot determine media type");
     }
 
     public MediaFile getMediaFile(Long id) {

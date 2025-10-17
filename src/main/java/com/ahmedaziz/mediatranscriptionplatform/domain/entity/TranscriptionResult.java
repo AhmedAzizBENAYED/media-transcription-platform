@@ -1,5 +1,6 @@
 package com.ahmedaziz.mediatranscriptionplatform.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDateTime;
@@ -24,6 +25,7 @@ public class TranscriptionResult {
 
     @Lob
     @Column(columnDefinition = "TEXT", nullable = false)
+    @Basic(fetch = FetchType.EAGER)
     private String transcript;
 
     @Column
@@ -39,6 +41,7 @@ public class TranscriptionResult {
     private Long processingTimeMs;
 
     @Column(nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     private LocalDateTime completedAt;
 
     @PrePersist

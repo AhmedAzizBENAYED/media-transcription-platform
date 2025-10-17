@@ -1,29 +1,30 @@
-2025-10-13 13:55:18 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 18875 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 13:55:18 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 13:55:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 13:55:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 13:55:18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:55:18 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 2 JPA repository interfaces.
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 13:55:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 13:55:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 13:55:19 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1112 ms
-2025-10-13 13:55:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 13:55:19 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7832382
-2025-10-13 13:55:19 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 13:55:19 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 13:55:19 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 13:55:19 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 13:55:19 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 13:55:19 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 13:55:19 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-10-17 18:13:22 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 13288 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
+2025-10-17 18:13:22 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-17 18:13:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-17 18:13:22 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-17 18:13:22 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 3 ms.
+2025-10-17 18:13:22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-17 18:13:22 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 2 JPA repository interfaces.
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-17 18:13:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-17 18:13:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-17 18:13:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1162 ms
+2025-10-17 18:13:23 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-17 18:13:23 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-17 18:13:23 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-17 18:13:23 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-17 18:13:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-17 18:13:23 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b4697cb
+2025-10-17 18:13:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-17 18:13:23 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-17 18:13:24 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 15.14
@@ -31,17 +32,17 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-13 13:55:20 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 13:55:20 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
-2025-10-13 13:55:20 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "uk7j98nia3o9pettme4uw8hgm4c" of relation "transcription_results" does not exist, skipping
-2025-10-13 13:55:20 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 13:55:20 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 13:55:20 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 13:55:21 [restartedMain] INFO  c.a.m.service.MinioStorageService - Created MinIO bucket: media-files
-2025-10-13 13:55:21 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 13:55:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 13:55:21 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 13:55:21 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+2025-10-17 18:13:24 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-17 18:13:24 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-17 18:13:24 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: POSTGRES
+2025-10-17 18:13:24 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-17 18:13:24 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
+2025-10-17 18:13:25 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
+2025-10-17 18:13:25 [restartedMain] INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-10-17 18:13:25 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-17 18:13:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-17 18:13:25 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-10-17 18:13:25 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
 	auto.include.jmx.reporter = true
 	bootstrap.controllers = []
 	bootstrap.servers = [localhost:9092]
@@ -117,60 +118,139 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-2025-10-13 13:55:21 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 13:55:21 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 13:55:21 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760360121847
-2025-10-13 13:55:22 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 13:55:22 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 13:55:22 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 13:55:22 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 13:55:22 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-10-13 13:55:22 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 13:55:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 13:55:22 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 13:55:22 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-10-13 13:55:22 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2025-10-13 13:55:56 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 19656 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 13:55:56 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:55:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-13 13:55:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 13:55:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 13:55:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 13:55:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 13:55:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 989 ms
-2025-10-13 13:55:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 13:55:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70246462
-2025-10-13 13:55:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 13:55:57 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 13:55:57 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 13:55:57 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 13:55:57 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 13:55:57 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 13:55:57 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+2025-10-17 18:13:26 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-17 18:13:26 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-17 18:13:26 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760721206014
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:26 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:27 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:27 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:28 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:28 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:29 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:29 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:30 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:30 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:31 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:31 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:33 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:33 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:34 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:34 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:35 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:35 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:36 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:36 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:37 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:37 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:38 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:38 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:39 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:39 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:40 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:40 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:41 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:41 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:42 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:42 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:43 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:43 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:45 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:45 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:48 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:48 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:49 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:49 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:49 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:49 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:50 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:50 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:52 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:52 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:53 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:53 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:54 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:54 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:55 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:55 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:56 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.k.c.a.i.AdminMetadataManager - [AdminClient clientId=media-transcription-platform-admin-0] Metadata update failed
+org.apache.kafka.common.errors.TimeoutException: Timed out waiting for a node assignment. Call: fetchMetadata
+2025-10-17 18:13:56 [restartedMain] ERROR o.s.kafka.core.KafkaAdmin - Could not configure topics
+java.util.concurrent.TimeoutException: null
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.apache.kafka.common.internals.KafkaFutureImpl.get(KafkaFutureImpl.java:183)
+	at org.springframework.kafka.core.KafkaAdmin.updateClusterId(KafkaAdmin.java:305)
+	at org.springframework.kafka.core.KafkaAdmin.initialize(KafkaAdmin.java:276)
+	at org.springframework.kafka.core.KafkaAdmin.afterSingletonsInstantiated(KafkaAdmin.java:246)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1149)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.ahmedaziz.mediatranscriptionplatform.MediaTranscriptionPlatformApplication.main(MediaTranscriptionPlatformApplication.java:16)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-10-17 18:13:56 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:56 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:57 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:57 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:58 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:58 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:13:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Node -1 disconnected.
+2025-10-17 18:13:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] WARN  o.apache.kafka.clients.NetworkClient - [AdminClient clientId=media-transcription-platform-admin-0] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Node may not be available.
+2025-10-17 18:16:28 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 16288 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
+2025-10-17 18:16:28 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-17 18:16:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-17 18:16:28 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-17 18:16:28 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 2 ms.
+2025-10-17 18:16:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-17 18:16:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-17 18:16:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-17 18:16:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-17 18:16:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-17 18:16:29 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1490 ms
+2025-10-17 18:16:29 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-17 18:16:29 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-17 18:16:29 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-17 18:16:30 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-17 18:16:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-17 18:16:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62469be3
+2025-10-17 18:16:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-17 18:16:30 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-17 18:16:30 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 15.14
@@ -178,15 +258,19 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-10-13 13:55:58 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 13:55:58 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 13:55:58 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 13:55:58 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 13:55:58 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 13:55:58 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 13:55:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 13:55:59 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 13:55:59 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+2025-10-17 18:16:30 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-17 18:16:30 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2025-10-17 18:16:30 [restartedMain] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "uk7j98nia3o9pettme4uw8hgm4c" of relation "transcription_results" does not exist, skipping
+2025-10-17 18:16:30 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-17 18:16:30 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: POSTGRES
+2025-10-17 18:16:30 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-17 18:16:31 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
+2025-10-17 18:16:31 [restartedMain] INFO  c.a.m.service.MinioStorageService - Created MinIO bucket: media-files
+2025-10-17 18:16:31 [restartedMain] INFO  o.s.b.c.l.s.TaskExecutorJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-10-17 18:16:31 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-17 18:16:31 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-10-17 18:16:31 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
 	auto.include.jmx.reporter = true
 	bootstrap.controllers = []
 	bootstrap.servers = [localhost:9092]
@@ -262,95 +346,56 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-2025-10-13 13:55:59 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 13:55:59 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 13:55:59 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760360159308
-2025-10-13 13:55:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 13:55:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 13:55:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 13:55:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 13:55:59 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-10-13 13:55:59 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 13:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 13:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 13:55:59 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-10-13 13:55:59 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2025-10-13 13:58:47 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 23631 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 13:58:47 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 13:58:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 13:58:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 2 JPA repository interfaces.
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 13:58:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 13:58:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 13:58:48 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 13:58:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 977 ms
-2025-10-13 13:58:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 13:58:49 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70246462
-2025-10-13 13:58:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 13:58:49 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 13:58:49 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 13:58:49 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 13:58:49 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 13:58:49 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 13:58:49 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.14
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-13 13:58:49 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 13:58:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 13:58:49 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 13:58:50 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 13:58:50 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 13:58:50 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 13:58:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 13:58:50 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 13:58:50 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760721392087
+2025-10-17 18:16:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
+2025-10-17 18:16:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-10-17 18:16:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-17 18:16:32 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-10-17 18:16:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
+	auto.offset.reset = earliest
 	bootstrap.servers = [localhost:9092]
+	check.crcs = true
 	client.dns.lookup = use_all_dns_ips
-	client.id = media-transcription-platform-admin-0
-	connections.max.idle.ms = 300000
+	client.id = consumer-transcription-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
 	default.api.timeout.ms = 60000
+	enable.auto.commit = false
 	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = transcription-consumer-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
 	metadata.max.age.ms = 300000
 	metadata.recovery.strategy = none
 	metric.reporters = []
 	metrics.num.samples = 2
 	metrics.recording.level = INFO
 	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
 	receive.buffer.bytes = 65536
 	reconnect.backoff.max.ms = 1000
 	reconnect.backoff.ms = 50
 	request.timeout.ms = 30000
-	retries = 2147483647
 	retry.backoff.max.ms = 1000
 	retry.backoff.ms = 100
 	sasl.client.callback.handler.class = null
@@ -385,6 +430,7 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 	security.protocol = PLAINTEXT
 	security.providers = null
 	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
 	socket.connection.setup.timeout.max.ms = 30000
 	socket.connection.setup.timeout.ms = 10000
 	ssl.cipher.suites = null
@@ -406,903 +452,41 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 	ssl.truststore.location = null
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
 
-2025-10-13 13:58:50 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 13:58:50 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 13:58:50 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760360330881
-2025-10-13 13:58:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 13:58:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 13:58:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 13:58:51 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 13:58:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-10-13 13:58:51 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 3.662 seconds (process running for 3.908)
-2025-10-13 13:58:51 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-13 13:58:51 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-13 13:58:51 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-13 14:03:23 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-13 14:03:23 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-13 14:03:23 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 14:03:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 14:03:23 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 14:06:40 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 31485 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 14:06:40 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 14:06:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 14:06:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 14:06:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 14:06:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 14:06:41 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 14:06:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 949 ms
-2025-10-13 14:06:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 14:06:41 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@406957bf
-2025-10-13 14:06:41 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 14:06:41 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 14:06:41 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 14:06:41 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 14:06:42 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 14:06:42 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 14:06:42 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.14
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-13 14:06:42 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 14:06:42 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 14:06:42 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 14:06:42 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 14:06:43 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 14:06:43 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 14:06:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 14:06:43 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 14:06:43 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [localhost:9092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = media-transcription-platform-admin-0
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.header.urlencode = false
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2025-10-13 14:06:43 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 14:06:43 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 14:06:43 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760360803870
-2025-10-13 14:06:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 14:06:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 14:06:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 14:06:44 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 14:06:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-10-13 14:06:44 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 3.826 seconds (process running for 4.09)
-2025-10-13 14:06:44 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-13 14:06:44 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-13 14:06:44 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-13 14:07:42 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-13 14:07:42 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-13 14:07:42 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 14:07:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 14:07:42 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 14:07:43 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 32647 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 14:07:43 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 14:07:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 14:07:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 14:07:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 14:07:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 14:07:44 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 960 ms
-2025-10-13 14:07:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 14:07:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70246462
-2025-10-13 14:07:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 14:07:44 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 14:07:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 14:07:44 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 14:07:44 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 14:07:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 14:07:44 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.14
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-13 14:07:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 14:07:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 14:07:45 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 14:07:45 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 14:07:45 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 14:07:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 14:07:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 14:07:46 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 14:07:46 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [localhost:9092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = media-transcription-platform-admin-0
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.header.urlencode = false
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2025-10-13 14:07:46 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 14:07:46 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 14:07:46 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760360866528
-2025-10-13 14:07:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 14:07:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 14:07:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 14:07:46 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 14:07:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-10-13 14:07:46 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 3.506 seconds (process running for 3.746)
-2025-10-13 14:07:47 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-13 14:07:47 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-13 14:07:47 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-13 14:11:47 [http-nio-8080-exec-2] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
-2025-10-13 14:11:47 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
-2025-10-13 14:11:47 [http-nio-8080-exec-2] ERROR c.a.m.c.MediaUploadController - Validation error during upload
-java.lang.IllegalArgumentException: Unsupported file type: application/octet-stream
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.validateFile(MediaUploadService.java:97)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.uploadMedia(MediaUploadService.java:42)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService$$SpringCGLIB$$0.uploadMedia(<generated>)
-	at com.ahmedaziz.mediatranscriptionplatform.controller.MediaUploadController.uploadMedia(MediaUploadController.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 14:12:49 [http-nio-8080-exec-6] ERROR c.a.m.e.GlobalExceptionHandler - Unexpected error occurred
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 14:12:49 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
-2025-10-13 16:54:28 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-13 16:54:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-13 16:54:28 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 16:54:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 16:54:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 16:55:44 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 159115 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 16:55:44 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 16:55:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 16:55:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 Redis repository interfaces.
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 16:55:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 16:55:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 16:55:45 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 933 ms
-2025-10-13 16:55:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 16:55:45 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58141bb5
-2025-10-13 16:55:45 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 16:55:45 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 16:55:45 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 16:55:45 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 16:55:45 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 16:55:46 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 16:55:46 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.14
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-13 16:55:46 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 16:55:46 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 16:55:46 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 16:55:46 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 16:55:46 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 16:55:47 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 16:55:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 16:55:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 16:55:47 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [localhost:9092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = media-transcription-platform-admin-0
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.header.urlencode = false
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2025-10-13 16:55:47 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 16:55:47 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 16:55:47 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760370947732
-2025-10-13 16:55:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 16:55:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 16:55:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 16:55:47 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 16:55:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-10-13 16:55:47 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 3.512 seconds (process running for 3.79)
-2025-10-13 16:55:48 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-13 16:55:48 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-13 16:55:48 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-13 16:56:27 [http-nio-8080-exec-1] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
-2025-10-13 16:56:27 [http-nio-8080-exec-1] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
-2025-10-13 16:56:27 [http-nio-8080-exec-1] ERROR c.a.m.c.MediaUploadController - Validation error during upload
-java.lang.IllegalArgumentException: Unsupported file type: application/octet-stream
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.validateFile(MediaUploadService.java:108)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.uploadMedia(MediaUploadService.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService$$SpringCGLIB$$0.uploadMedia(<generated>)
-	at com.ahmedaziz.mediatranscriptionplatform.controller.MediaUploadController.uploadMedia(MediaUploadController.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 16:56:45 [http-nio-8080-exec-2] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
-2025-10-13 16:56:45 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
-2025-10-13 16:56:45 [http-nio-8080-exec-2] ERROR c.a.m.c.MediaUploadController - Validation error during upload
-java.lang.IllegalArgumentException: Unsupported file type: application/octet-stream
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.validateFile(MediaUploadService.java:108)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.uploadMedia(MediaUploadService.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService$$SpringCGLIB$$0.uploadMedia(<generated>)
-	at com.ahmedaziz.mediatranscriptionplatform.controller.MediaUploadController.uploadMedia(MediaUploadController.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 16:56:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-10-13 16:56:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-10-13 16:56:54 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 16:56:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-10-13 16:56:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-10-13 16:56:55 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Starting MediaTranscriptionPlatformApplication using Java 17.0.12 with PID 160328 (/home/ahmed-aziz/Documents/projects/media-transcription-platform/target/classes started by ahmed-aziz in /home/ahmed-aziz/Documents/projects/media-transcription-platform)
-2025-10-13 16:56:55 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - No active profile set, falling back to 1 default profile: "default"
-2025-10-13 16:56:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-10-13 16:56:55 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 2 JPA repository interfaces.
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.MediaFileRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.ahmedaziz.mediatranscriptionplatform.repository.TranscriptionResultRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-10-13 16:56:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-10-13 16:56:56 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.46]
-2025-10-13 16:56:56 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-10-13 16:56:56 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
-2025-10-13 16:56:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-10-13 16:56:57 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70246462
-2025-10-13 16:56:57 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-10-13 16:56:57 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-10-13 16:56:57 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.29.Final
-2025-10-13 16:56:57 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-10-13 16:56:57 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-10-13 16:56:57 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-10-13 16:56:57 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 15.14
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-10-13 16:56:57 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-10-13 16:56:57 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-10-13 16:56:57 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2025-10-13 16:56:58 [restartedMain] INFO  c.a.m.config.MinioConfig - Initializing MinIO client with endpoint: http://localhost:9000
-2025-10-13 16:56:58 [restartedMain] INFO  c.a.m.service.MinioStorageService - MinIO bucket already exists: media-files
-2025-10-13 16:56:58 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-10-13 16:56:58 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-10-13 16:56:58 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
-2025-10-13 16:56:58 [restartedMain] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
-	auto.include.jmx.reporter = true
-	bootstrap.controllers = []
-	bootstrap.servers = [localhost:9092]
-	client.dns.lookup = use_all_dns_ips
-	client.id = media-transcription-platform-admin-0
-	connections.max.idle.ms = 300000
-	default.api.timeout.ms = 60000
-	enable.metrics.push = true
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retries = 2147483647
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.header.urlencode = false
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-
-2025-10-13 16:56:58 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 16:56:58 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 16:56:58 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760371018868
-2025-10-13 16:56:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.admin.client for media-transcription-platform-admin-0 unregistered
-2025-10-13 16:56:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-10-13 16:56:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-10-13 16:56:59 [kafka-admin-client-thread | media-transcription-platform-admin-0] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-10-13 16:56:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-10-13 16:56:59 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 3.458 seconds (process running for 3.71)
-2025-10-13 16:56:59 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-10-13 16:56:59 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-10-13 16:56:59 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-10-13 16:57:05 [http-nio-8080-exec-1] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
-2025-10-13 16:57:05 [http-nio-8080-exec-1] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
-2025-10-13 16:57:05 [http-nio-8080-exec-1] ERROR c.a.m.c.MediaUploadController - Validation error during upload
-java.lang.IllegalArgumentException: Unsupported file type: application/octet-stream
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.validateFile(MediaUploadService.java:108)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService.uploadMedia(MediaUploadService.java:53)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728)
-	at com.ahmedaziz.mediatranscriptionplatform.service.MediaUploadService$$SpringCGLIB$$0.uploadMedia(<generated>)
-	at com.ahmedaziz.mediatranscriptionplatform.controller.MediaUploadController.uploadMedia(MediaUploadController.java:32)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.service.MinioStorageService - File uploaded successfully: 0775061e-6d49-4e91-8e00-e742305d6365.mp4
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - File uploaded to MinIO: 0775061e-6d49-4e91-8e00-e742305d6365.mp4
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Media file metadata saved with ID: 1
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.s.kafka.KafkaProducerService - Sending media uploaded event for file ID: 1
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760721392590
+2025-10-17 18:16:32 [restartedMain] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Subscribed to topic(s): media.uploaded
+2025-10-17 18:16:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Cluster ID: 5qWkWhd8RcKCWJE_OVtHbQ
+2025-10-17 18:16:32 [restartedMain] INFO  c.a.m.MediaTranscriptionPlatformApplication - Started MediaTranscriptionPlatformApplication in 4.724 seconds (process running for 5.01)
+2025-10-17 18:16:32 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-17 18:16:32 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-17 18:16:32 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-10-17 18:16:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-10-17 18:16:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] (Re-)joining group
+2025-10-17 18:16:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-transcription-consumer-group-1-29e9b9f2-a3e8-49a6-8dee-a0f82ec74edd
+2025-10-17 18:16:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] (Re-)joining group
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Successfully joined group with generation Generation{generationId=1, memberId='consumer-transcription-consumer-group-1-29e9b9f2-a3e8-49a6-8dee-a0f82ec74edd', protocol='range'}
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Finished assignment for group at generation 1: {consumer-transcription-consumer-group-1-29e9b9f2-a3e8-49a6-8dee-a0f82ec74edd=Assignment(partitions=[media.uploaded-0, media.uploaded-1, media.uploaded-2])}
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Successfully synced group in generation Generation{generationId=1, memberId='consumer-transcription-consumer-group-1-29e9b9f2-a3e8-49a6-8dee-a0f82ec74edd', protocol='range'}
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Notifying assignor about the new Assignment(partitions=[media.uploaded-0, media.uploaded-1, media.uploaded-2])
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Adding newly assigned partitions: media.uploaded-0, media.uploaded-1, media.uploaded-2
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Found no committed offset for partition media.uploaded-1
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Found no committed offset for partition media.uploaded-0
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Found no committed offset for partition media.uploaded-2
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Resetting offset for partition media.uploaded-1 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Resetting offset for partition media.uploaded-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Resetting offset for partition media.uploaded-2 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
+2025-10-17 18:16:36 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - transcription-consumer-group: partitions assigned: [media.uploaded-0, media.uploaded-1, media.uploaded-2]
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.c.MediaUploadController - Received upload request for file: test.mp4
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Starting media upload process for file: test.mp4
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.service.MinioStorageService - File uploaded successfully: 933f6680-9c2c-4246-951e-2920e400fd01.mp4
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - File uploaded to MinIO: 933f6680-9c2c-4246-951e-2920e400fd01.mp4
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Media file metadata saved with ID: 1
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.s.kafka.KafkaProducerService - Sending media uploaded event for file ID: 1
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
 	batch.size = 16384
@@ -1399,17 +583,88 @@ java.lang.IllegalArgumentException: Unsupported file type: application/octet-str
 	transactional.id = null
 	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
 
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=media-transcription-platform-producer-1] Instantiated an idempotent producer.
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760371166686
-2025-10-13 16:59:26 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=media-transcription-platform-producer-1] Cluster ID: e58oOt3GSry0EJbpr_-kNw
-2025-10-13 16:59:26 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=media-transcription-platform-producer-1] ProducerId set to 0 with epoch 0
-2025-10-13 16:59:26 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Media upload event sent for file ID: 1
-2025-10-13 16:59:26 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  c.a.m.s.kafka.KafkaProducerService - Media upload event sent successfully. Topic: media.uploaded, Partition: 0, Offset: 0
-2025-10-13 17:02:01 [http-nio-8080-exec-5] ERROR c.a.m.e.GlobalExceptionHandler - Unexpected error occurred
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=media-transcription-platform-producer-1] Instantiated an idempotent producer.
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1760721425427
+2025-10-17 18:17:05 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=media-transcription-platform-producer-1] Cluster ID: 5qWkWhd8RcKCWJE_OVtHbQ
+2025-10-17 18:17:05 [http-nio-8080-exec-2] INFO  c.a.m.service.MediaUploadService - Media upload event sent for file ID: 1
+2025-10-17 18:17:05 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=media-transcription-platform-producer-1] ProducerId set to 0 with epoch 0
+2025-10-17 18:17:05 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  c.a.m.s.kafka.KafkaProducerService - Media upload event sent successfully. Topic: media.uploaded, Partition: 0, Offset: 0
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.s.kafka.KafkaConsumerService - Received media upload event - File ID: 1, Partition: 0
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.s.kafka.KafkaConsumerService - Processing media file: test.mp4
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.service.TranscriptionService - Starting transcription for media file ID: 1
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.service.TranscriptionService - Downloaded file from MinIO: 2631608 bytes
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.service.TranscriptionService - Transcription completed for media file ID: 1 in 7ms
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.s.kafka.KafkaProducerService - Sending transcription completed event for file ID: 1
+2025-10-17 18:17:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.a.m.s.kafka.KafkaConsumerService - Transcription completed successfully for file ID: 1
+2025-10-17 18:17:05 [kafka-producer-network-thread | media-transcription-platform-producer-1] INFO  c.a.m.s.kafka.KafkaProducerService - Transcription completed event sent successfully. Topic: media.transcribed, Status: COMPLETED
+2025-10-17 18:17:19 [http-nio-8080-exec-1] INFO  c.a.m.c.TranscriptionController - Fetching transcription for media file ID: 1
+2025-10-17 18:20:00 [scheduling-1] INFO  c.a.m.s.TranscriptionScheduler - Scheduled transcription job triggered
+2025-10-17 18:20:00 [scheduling-1] INFO  c.a.m.service.BatchJobService - Starting transcription batch job
+2025-10-17 18:20:00 [scheduling-1] ERROR c.a.m.s.TranscriptionScheduler - Error running scheduled transcription job
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ AND JOB_KEY = ?]
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:114)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:116)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:844)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:873)
+	at org.springframework.batch.core.repository.dao.JdbcJobInstanceDao.getJobInstance(JdbcJobInstanceDao.java:181)
+	at org.springframework.batch.core.repository.support.SimpleJobRepository.getLastJobExecution(SimpleJobRepository.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy158.getLastJobExecution(Unknown Source)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:109)
+	at com.ahmedaziz.mediatranscriptionplatform.service.BatchJobService.startTranscriptionJob(BatchJobService.java:36)
+	at com.ahmedaziz.mediatranscriptionplatform.scheduler.TranscriptionScheduler.runScheduledTranscriptionJob(TranscriptionScheduler.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "batch_job_instance" does not exist
+  Position: 39
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$queryForStream$1(JdbcTemplate.java:848)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	... 36 common frames omitted
+2025-10-17 18:20:56 [http-nio-8080-exec-4] ERROR c.a.m.e.GlobalExceptionHandler - Unexpected error occurred
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/transcription/media.
 	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
 	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
@@ -1456,53 +711,154 @@ org.springframework.web.servlet.resource.NoResourceFoundException: No static res
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 17:02:01 [http-nio-8080-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .]
-2025-10-13 17:02:01 [http-nio-8080-exec-6] ERROR c.a.m.e.GlobalExceptionHandler - Unexpected error occurred
-org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.
-	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+2025-10-17 18:20:57 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/v1/transcription/media.]
+2025-10-17 18:21:13 [http-nio-8080-exec-5] INFO  c.a.m.c.TranscriptionController - Checking transcription status for media file ID: 1
+2025-10-17 18:25:00 [scheduling-1] INFO  c.a.m.s.TranscriptionScheduler - Scheduled transcription job triggered
+2025-10-17 18:25:00 [scheduling-1] INFO  c.a.m.service.BatchJobService - Starting transcription batch job
+2025-10-17 18:25:00 [scheduling-1] ERROR c.a.m.s.TranscriptionScheduler - Error running scheduled transcription job
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ AND JOB_KEY = ?]
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:114)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:116)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:844)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:873)
+	at org.springframework.batch.core.repository.dao.JdbcJobInstanceDao.getJobInstance(JdbcJobInstanceDao.java:181)
+	at org.springframework.batch.core.repository.support.SimpleJobRepository.getLastJobExecution(SimpleJobRepository.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy158.getLastJobExecution(Unknown Source)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:109)
+	at com.ahmedaziz.mediatranscriptionplatform.service.BatchJobService.startTranscriptionJob(BatchJobService.java:36)
+	at com.ahmedaziz.mediatranscriptionplatform.scheduler.TranscriptionScheduler.runScheduledTranscriptionJob(TranscriptionScheduler.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2025-10-13 17:02:01 [http-nio-8080-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "batch_job_instance" does not exist
+  Position: 39
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$queryForStream$1(JdbcTemplate.java:848)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	... 36 common frames omitted
+2025-10-17 18:30:00 [scheduling-1] INFO  c.a.m.s.TranscriptionScheduler - Scheduled transcription job triggered
+2025-10-17 18:30:00 [scheduling-1] INFO  c.a.m.service.BatchJobService - Starting transcription batch job
+2025-10-17 18:30:00 [scheduling-1] ERROR c.a.m.s.TranscriptionScheduler - Error running scheduled transcription job
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ AND JOB_KEY = ?]
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:114)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:116)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1556)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:844)
+	at org.springframework.jdbc.core.JdbcTemplate.queryForStream(JdbcTemplate.java:873)
+	at org.springframework.batch.core.repository.dao.JdbcJobInstanceDao.getJobInstance(JdbcJobInstanceDao.java:181)
+	at org.springframework.batch.core.repository.support.SimpleJobRepository.getLastJobExecution(SimpleJobRepository.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy158.getLastJobExecution(Unknown Source)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:109)
+	at com.ahmedaziz.mediatranscriptionplatform.service.BatchJobService.startTranscriptionJob(BatchJobService.java:36)
+	at com.ahmedaziz.mediatranscriptionplatform.scheduler.TranscriptionScheduler.runScheduledTranscriptionJob(TranscriptionScheduler.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.config.Task$OutcomeTrackingRunnable.run(Task.java:85)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "batch_job_instance" does not exist
+  Position: 39
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:196)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:139)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate.lambda$queryForStream$1(JdbcTemplate.java:848)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658)
+	... 36 common frames omitted
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Revoke previously assigned partitions media.uploaded-0, media.uploaded-1, media.uploaded-2
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - transcription-consumer-group: partitions revoked: [media.uploaded-0, media.uploaded-1, media.uploaded-2]
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Member consumer-transcription-consumer-group-1-29e9b9f2-a3e8-49a6-8dee-a0f82ec74edd sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-10-17 18:31:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-transcription-consumer-group-1, groupId=transcription-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-transcription-consumer-group-1 unregistered
+2025-10-17 18:31:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - transcription-consumer-group: Consumer stopped
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-17 18:31:30 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=media-transcription-platform-producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for media-transcription-platform-producer-1 unregistered
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-10-17 18:31:30 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

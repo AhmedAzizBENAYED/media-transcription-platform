@@ -2,6 +2,7 @@ spring:
   application:
     name: media-transcription-platform
 
+
   # Database Configuration
   datasource:
     url: jdbc:postgresql://localhost:5432/transcription_db
