@@ -4,15 +4,17 @@ import com.ahmedaziz.mediatranscriptionplatform.domain.entity.TranscriptionResul
 import com.ahmedaziz.mediatranscriptionplatform.dto.ApiResponse;
 import com.ahmedaziz.mediatranscriptionplatform.dto.TranscriptionResultResponse;
 import com.ahmedaziz.mediatranscriptionplatform.service.TranscriptionResultService;
+import com.ahmedaziz.mediatranscriptionplatform.service.TranscriptionResultService.TranscriptionStatusResponse;
+import com.ahmedaziz.mediatranscriptionplatform.service.TranscriptionResultService.TranscriptionStatistics;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.nio.charset.StandardCharsets;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/transcription")
@@ -30,66 +32,139 @@ public class TranscriptionController {
         log.info("Fetching transcription for media file ID: {}", mediaFileId);
 
         try {
-            TranscriptionResult result = transcriptionResultService.getTranscriptionByMediaFileId(mediaFileId);
+            TranscriptionResult result = transcriptionResultService
+                    .getTranscriptionByMediaFileId(mediaFileId);
 
-            TranscriptionResultResponse response = TranscriptionResultResponse.builder()
-                    .id(result.getId())
-                    .mediaFileId(result.getMediaFileId())
-                    .transcript(result.getTranscript())
-                    .language(result.getLanguage())
-                    .confidence(result.getConfidence())
-                    .wordCount(result.getWordCount())
-                    .processingTimeMs(result.getProcessingTimeMs())
-                    .completedAt(result.getCompletedAt())
-                    .build();
+            TranscriptionResultResponse response = toTranscriptionResultResponse(result);
 
-            return ResponseEntity.ok(ApiResponse.success(response,
-                    "Transcription retrieved successfully"));
+            return ResponseEntity.ok(ApiResponse.success(
+                    response,
+                    "Transcription retrieved successfully"
+
+            ));
 
         } catch (IllegalArgumentException e) {
             log.warn("Transcription not found for media file ID: {}", mediaFileId);
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body(ApiResponse.error(e.getMessage()));
+        }
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<ApiResponse<TranscriptionResultResponse>> getTranscriptionById(
+            @PathVariable Long id) {
+
+        try {
+            TranscriptionResult result = transcriptionResultService.getTranscriptionById(id);
+            TranscriptionResultResponse response = toTranscriptionResultResponse(result);
+
+            return ResponseEntity.ok(ApiResponse.success(
+                    response,
+                    "Transcription retrieved successfully"
+
+            ));
+
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
                     .body(ApiResponse.error(e.getMessage()));
         }
     }
 
     @GetMapping("/media/{mediaFileId}/status")
-    public ResponseEntity<ApiResponse<TranscriptionResultService.TranscriptionStatusResponse>>
-    getTranscriptionStatus(@PathVariable Long mediaFileId) {
+    public ResponseEntity<ApiResponse<TranscriptionStatusResponse>> getTranscriptionStatus(
+            @PathVariable Long mediaFileId) {
 
         log.info("Checking transcription status for media file ID: {}", mediaFileId);
 
         try {
-            TranscriptionResultService.TranscriptionStatusResponse status =
-                    transcriptionResultService.getTranscriptionStatus(mediaFileId);
+            TranscriptionStatusResponse status = transcriptionResultService
+                    .getTranscriptionStatus(mediaFileId);
 
-            return ResponseEntity.ok(ApiResponse.success(status,
-                    "Transcription status retrieved successfully"));
+            return ResponseEntity.ok(ApiResponse.success(
+                    status,
+                    "Transcription status retrieved successfully"
+
+            ));
+
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
                     .body(ApiResponse.error(e.getMessage()));
         }
     }
 
-    @GetMapping("/media/{mediaFileId}/download")
-    public ResponseEntity<byte[]> downloadTranscription(@PathVariable Long mediaFileId) {
-        log.info("Downloading transcription for media file ID: {}", mediaFileId);
-
+    @GetMapping("/media/{mediaFileId}/text")
+    public ResponseEntity<String> getTranscriptionText(@PathVariable Long mediaFileId) {
         try {
-            TranscriptionResult result = transcriptionResultService.getTranscriptionByMediaFileId(mediaFileId);
+            TranscriptionResult result = transcriptionResultService
+                    .getTranscriptionByMediaFileId(mediaFileId);
 
-            byte[] content = result.getTranscript().getBytes(StandardCharsets.UTF_8);
-
-            HttpHeaders headers = new HttpHeaders();
-            headers.setContentType(MediaType.TEXT_PLAIN);
-            headers.setContentDispositionFormData("attachment",
-                    "transcription_" + mediaFileId + ".txt");
-            headers.setContentLength(content.length);
-
-            return new ResponseEntity<>(content, headers, HttpStatus.OK);
+            return ResponseEntity
+                    .ok()
+                    .contentType(MediaType.TEXT_PLAIN)
+                    .body(result.getTranscript());
 
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
+                    .body("Transcription not found");
         }
+    }
+
+    @GetMapping
+    public ResponseEntity<ApiResponse<List<TranscriptionResultResponse>>> getAllTranscriptions() {
+        List<TranscriptionResult> results = transcriptionResultService.getAllTranscriptions();
+
+        List<TranscriptionResultResponse> responses = results.stream()
+                .map(this::toTranscriptionResultResponse)
+                .collect(Collectors.toList());
+
+        return ResponseEntity.ok(ApiResponse.success(
+                responses,
+                "All transcriptions retrieved successfully"
+
+        ));
+    }
+
+    @DeleteMapping("/media/{mediaFileId}")
+    public ResponseEntity<ApiResponse<Void>> deleteTranscription(@PathVariable Long mediaFileId) {
+        try {
+            transcriptionResultService.deleteTranscription(mediaFileId);
+            return ResponseEntity.ok(ApiResponse.success(
+                    null,
+                    "Transcription deleted successfully"
+
+            ));
+
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body(ApiResponse.error("Failed to delete transcription: " + e.getMessage()));
+        }
+    }
+
+    @GetMapping("/statistics")
+    public ResponseEntity<ApiResponse<TranscriptionStatistics>> getStatistics() {
+        TranscriptionStatistics statistics = transcriptionResultService.getStatistics();
+        return ResponseEntity.ok(ApiResponse.success(
+                statistics,
+                "Statistics retrieved successfully"
+
+        ));
+    }
+
+    private TranscriptionResultResponse toTranscriptionResultResponse(TranscriptionResult result) {
+        return TranscriptionResultResponse.builder()
+                .id(result.getId())
+                .mediaFileId(result.getMediaFileId())
+                .transcript(result.getTranscript())
+                .language(result.getLanguage())
+                .confidence(result.getConfidence())
+                .wordCount(result.getWordCount())
+                .processingTimeMs(result.getProcessingTimeMs())
+                .completedAt(result.getCompletedAt())
+                .build();
     }
 }

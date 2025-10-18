@@ -108,13 +108,15 @@ services:
     depends_on:
       - kafka
     ports:
-      - "8082:8080"
+      - "8082:8080"  # Changed from 8080:8080 to avoid conflict
     environment:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
       KAFKA_CLUSTERS_0_ZOOKEEPER: zookeeper:2181
     networks:
       - transcription-network
+
+  # Whisper AI Service (Python-based transcription)
   whisper-service:
     build:
       context: ./whisper-service
@@ -123,7 +125,7 @@ services:
     ports:
       - "8001:8001"
     environment:
-      WHISPER_MODEL: base
+      WHISPER_MODEL: small
       HOST: 0.0.0.0
       PORT: 8001
     volumes:
@@ -131,16 +133,19 @@ services:
     networks:
       - transcription-network
     healthcheck:
-      test: [ "CMD", "curl", "-f", "http://localhost:8001/health" ]
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
       interval: 30s
       timeout: 10s
       retries: 3
-    # Uncomment to limit resources
-    # deploy:
-    #   resources:
-    #     limits:
-    #       cpus: '2'
-    #       memory: 4G
+      start_period: 120s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          memory: 2G
+
 volumes:
   postgres_data:
   redis_data:

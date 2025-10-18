@@ -1,0 +1,127 @@
+spring:
+  application:
+    name: media-transcription-platform
+
+  # Database Configuration
+  datasource:
+    url: jdbc:postgresql://postgres:5432/transcription_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  # JPA Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+
+  # Kafka Configuration
+  kafka:
+    bootstrap-servers: kafka:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: all
+      retries: 3
+      properties:
+        linger.ms: 10
+        batch.size: 16384
+    consumer:
+      group-id: transcription-consumer-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        max.poll.interval.ms: 300000
+
+  # Redis Configuration
+  data:
+    redis:
+      host: redis
+      port: 6379
+      timeout: 60000
+      jedis:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 2
+          max-wait: -1ms
+
+  # File Upload Configuration
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+      file-size-threshold: 2KB
+
+  # Batch Configuration
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+
+# MinIO Configuration
+minio:
+  endpoint: http://minio:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: media-files
+  secure: false
+
+# Application Configuration
+app:
+  upload:
+    temp-dir: /tmp/media-uploads
+  transcription:
+    max-retries: 3
+    ai-service-url: http://whisper-service:8001/transcribe
+  cache:
+    ttl: 86400 # 1 day in seconds
+
+# Kafka Topics
+kafka:
+  topics:
+    media-uploaded: media.uploaded
+    media-transcribed: media.transcribed
+    media-failed: media.failed
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+# Logging Configuration
+logging:
+  level:
+    root: INFO
+    com.ahmedaziz.mediatranscriptionplatform: DEBUG
+    org.springframework.kafka: INFO
+    org.springframework.batch: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

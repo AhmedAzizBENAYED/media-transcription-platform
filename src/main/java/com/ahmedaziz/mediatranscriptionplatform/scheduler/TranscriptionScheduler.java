@@ -1,46 +1,74 @@
 package com.ahmedaziz.mediatranscriptionplatform.scheduler;
 
-import com.ahmedaziz.mediatranscriptionplatform.batch.MediaFileReader;
-import com.ahmedaziz.mediatranscriptionplatform.service.BatchJobService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.JobParameters;
+import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+
+/**
+ * Scheduler to trigger batch transcription jobs periodically
+ * This provides an alternative to Kafka-driven processing
+ */
 @Component
 @RequiredArgsConstructor
 @Slf4j
+@ConditionalOnProperty(name = "app.batch.scheduler.enabled", havingValue = "true", matchIfMissing = false)
 public class TranscriptionScheduler {
 
-    private final BatchJobService batchJobService;
-    private final MediaFileReader mediaFileReader;
+    private final JobLauncher jobLauncher;
+    private final Job transcriptionJob;
 
     /**
-     * Run transcription batch job every 5 minutes
-     * Cron: second, minute, hour, day, month, weekday
+     * Scheduled batch job to process uploaded files
+     * Runs every 5 minutes by default
      */
-    @Scheduled(cron = "0 */5 * * * *")
-    public void runScheduledTranscriptionJob() {
-        log.info("Scheduled transcription job triggered");
+    @Scheduled(cron = "${app.batch.scheduler.cron:0 */5 * * * *}")
+    public void runBatchTranscription() {
+        log.info("======================================");
+        log.info("Starting scheduled batch transcription job");
+        log.info("Timestamp: {}", LocalDateTime.now());
+        log.info("======================================");
 
         try {
-            // Reset the reader before each scheduled run
-            mediaFileReader.reset();
+            JobParameters params = new JobParametersBuilder()
+                    .addLong("timestamp", System.currentTimeMillis())
+                    .addString("trigger", "scheduled")
+                    .toJobParameters();
 
-            batchJobService.startTranscriptionJob();
-            log.info("Scheduled transcription job started successfully");
+            var execution = jobLauncher.run(transcriptionJob, params);
+
+            log.info("Batch job completed with status: {}", execution.getStatus());
+            log.info("Read count: {}", execution.getStepExecutions().stream()
+                    .mapToLong(step -> step.getReadCount())
+                    .sum());
+            log.info("Write count: {}", execution.getStepExecutions().stream()
+                    .mapToLong(step -> step.getWriteCount())
+                    .sum());
 
         } catch (Exception e) {
-            log.error("Error running scheduled transcription job", e);
+            log.error("Error running scheduled batch job", e);
         }
+
+        log.info("======================================");
+        log.info("Scheduled batch transcription job finished");
+        log.info("======================================");
     }
 
     /**
-     * Alternative: Run on fixed delay (30 seconds after previous completion)
+     * Cleanup old completed/failed records
+     * Runs daily at 2 AM
      */
-    // @Scheduled(fixedDelay = 30000)
-    public void runFixedDelayTranscriptionJob() {
-        log.debug("Fixed delay transcription job check");
-        // This can be enabled as an alternative to cron scheduling
+    @Scheduled(cron = "${app.batch.cleanup.cron:0 0 2 * * *}")
+    public void cleanupOldRecords() {
+        log.info("Running cleanup job for old records");
+        // Implement cleanup logic if needed
+        // For example: delete transcriptions older than 30 days
     }
 }

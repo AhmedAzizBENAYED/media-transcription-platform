@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,23 +27,29 @@ public class MediaUploadController {
     @PostMapping("/upload")
     public ResponseEntity<ApiResponse<MediaFileResponse>> uploadMedia(
             @RequestParam("file") MultipartFile file) {
+
+        log.info("Received upload request: {}", file.getOriginalFilename());
+
         try {
-            log.info("Received upload request for file: {}", file.getOriginalFilename());
-
             MediaFile mediaFile = mediaUploadService.uploadMedia(file);
-            MediaFileResponse response = mapToResponse(mediaFile);
+            MediaFileResponse response = toMediaFileResponse(mediaFile);
 
-            return ResponseEntity.status(HttpStatus.CREATED)
-                    .body(ApiResponse.success(response, "File uploaded successfully"));
+            return ResponseEntity.ok(ApiResponse.success(
+                    response,
+                    "File uploaded successfully"
+            ));
+
 
         } catch (IllegalArgumentException e) {
-            log.error("Validation error during upload", e);
-            return ResponseEntity.badRequest()
+            log.warn("Invalid upload request: {}", e.getMessage());
+            return ResponseEntity
+                    .badRequest()
                     .body(ApiResponse.error(e.getMessage()));
 
-        } catch (Exception e) {
-            log.error("Error uploading file", e);
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+        } catch (IOException e) {
+            log.error("Failed to upload file", e);
+            return ResponseEntity
+                    .status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(ApiResponse.error("Failed to upload file: " + e.getMessage()));
         }
     }
@@ -51,51 +58,87 @@ public class MediaUploadController {
     public ResponseEntity<ApiResponse<MediaFileResponse>> getMediaFile(@PathVariable Long id) {
         try {
             MediaFile mediaFile = mediaUploadService.getMediaFile(id);
-            MediaFileResponse response = mapToResponse(mediaFile);
+            MediaFileResponse response = toMediaFileResponse(mediaFile);
 
-            return ResponseEntity.ok(ApiResponse.success(response, "Media file retrieved successfully"));
+            return ResponseEntity.ok(ApiResponse.success(
+                    response,
+                    "Media file retrieved successfully"
+            ));
+
 
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+            return ResponseEntity
+                    .status(HttpStatus.NOT_FOUND)
                     .body(ApiResponse.error(e.getMessage()));
         }
     }
 
     @GetMapping
-    public ResponseEntity<ApiResponse<List<MediaFileResponse>>> getAllMediaFiles() {
-        List<MediaFile> mediaFiles = mediaUploadService.getAllMediaFiles();
+    public ResponseEntity<ApiResponse<List<MediaFileResponse>>> getAllMediaFiles(
+            @RequestParam(required = false) String status) {
+
+        List<MediaFile> mediaFiles;
+
+        if (status != null && !status.isEmpty()) {
+            try {
+                MediaFile.ProcessingStatus processingStatus =
+                        MediaFile.ProcessingStatus.valueOf(status.toUpperCase());
+                mediaFiles = mediaUploadService.getMediaFilesByStatus(processingStatus);
+            } catch (IllegalArgumentException e) {
+                return ResponseEntity
+                        .badRequest()
+                        .body(ApiResponse.error("Invalid status: " + status));
+            }
+        } else {
+            mediaFiles = mediaUploadService.getAllMediaFiles();
+        }
+
         List<MediaFileResponse> responses = mediaFiles.stream()
-                .map(this::mapToResponse)
+                .map(this::toMediaFileResponse)
                 .collect(Collectors.toList());
 
-        return ResponseEntity.ok(ApiResponse.success(responses, "Media files retrieved successfully"));
+        return ResponseEntity.ok(ApiResponse.success(
+                responses,
+                "Media files retrieved successfully"
+
+        ));
+
+
     }
 
     @GetMapping("/status/{status}")
     public ResponseEntity<ApiResponse<List<MediaFileResponse>>> getMediaFilesByStatus(
             @PathVariable String status) {
+
         try {
-            MediaFile.ProcessingStatus processingStatus = MediaFile.ProcessingStatus.valueOf(status.toUpperCase());
+            MediaFile.ProcessingStatus processingStatus =
+                    MediaFile.ProcessingStatus.valueOf(status.toUpperCase());
+
             List<MediaFile> mediaFiles = mediaUploadService.getMediaFilesByStatus(processingStatus);
             List<MediaFileResponse> responses = mediaFiles.stream()
-                    .map(this::mapToResponse)
+                    .map(this::toMediaFileResponse)
                     .collect(Collectors.toList());
 
-            return ResponseEntity.ok(ApiResponse.success(responses, "Media files retrieved successfully"));
+            return ResponseEntity.ok(ApiResponse.success(
+                    responses,
+                    "Media files retrieved successfully"
+
+            ));
 
         } catch (IllegalArgumentException e) {
-            return ResponseEntity.badRequest()
+            return ResponseEntity
+                    .badRequest()
                     .body(ApiResponse.error("Invalid status: " + status));
         }
     }
 
-    private MediaFileResponse mapToResponse(MediaFile mediaFile) {
+    private MediaFileResponse toMediaFileResponse(MediaFile mediaFile) {
         return MediaFileResponse.builder()
                 .id(mediaFile.getId())
                 .originalFilename(mediaFile.getOriginalFilename())
                 .mediaType(mediaFile.getMediaType().name())
-                .status(mediaFile.getStatus().name())
                 .fileSize(mediaFile.getFileSize())
+                .status(mediaFile.getStatus().name())
                 .uploadedAt(mediaFile.getUploadedAt())
                 .completedAt(mediaFile.getCompletedAt())
                 .errorMessage(mediaFile.getErrorMessage())
